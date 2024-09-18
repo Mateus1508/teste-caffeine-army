@@ -13,16 +13,26 @@
     <header class="header">
         <section class="toggle-menu">
             <img src="/assets/icons/ic_round-menu.png" alt="">
-            <p>Todos os produtos</p>
+            <p class="label-menu">Todos os produtos</p>
         </section>
         <img src="/assets/logo.png" alt="">
         <section class="menu-options">
-            <button class="sign-button">Assinar Whiteeth</button>
+            <button class="secondary-button none-sm">Assinar Whiteeth</button>
             <img src="/assets/icons/ic_baseline-account-circle.png" alt="">
             <img src="/assets/icons/ic_baseline-add-shopping-cart.png" alt="">
         </section>
     </header>
     <div class="main-banner">
+        <img class="img-banner-desktop none-sm" src="/assets/main-img.png" alt="">
+        <div class="banner-responsive-box">
+            <img class="img-banner-mobile" src="/assets/main-img-responsive.png" alt="">
+            <div class="banner-responsive-buttons">
+                <button class="secondary-button">Assinar Whiteeth</button>
+                <button class="help-button">
+                    <img src="/assets/icons/ic_round-3p.png" alt="">
+                </button>
+            </div>
+        </div>
         <section class="banner-content">
             <h1 class="banner-title">Cuide do seu sorriso, <span style="font-style: italic;">mas também do planeta</span></h1>
             <p class="banner-paragraph">Encontre aqui produtos de higiene bucal orgânicos e refrescantes, como pasta de dente, escova de dente e muito mais!</p>
@@ -45,30 +55,22 @@
                    <button class="filter-button">Aparelhos ortodônticos</button>
                 </div>
             </div>
-            <button class="help-button">
+            <button class="help-button none-sm">
                 <img src="/assets/icons/ic_round-3p.png" alt="">
             </button>
         </section>
-        <section class="products">
-            <h2 class="product-title">Pasta de dente</h2>
-            <hr>
-            <div class="product-list">
-                <article class="product-item">
-                    <span class="discount-percentage">30% OFF</span>
-                    <img class="img-item" src="/assets/toothpaste.png" alt="">
-                    <div class="product-content">
-                        <img class="rating" src="/assets/rating.png" alt="">
-                        <h3 class="product-item-title">Hortelã</h3>
-                        <div class="price-box">
-                            <del class="discount">R$70,90</del>
-                            <span class="price">R$50,90</span>
-                        </div>
-                    </div>
-                    <button class="add-cart">Adicionar ao carrinho</button>
-                </article>
-            </div>
-        </section>
+        <div id="products-container"></div>
     </main>
+    <footer>
+        <img src="/assets/footer-img.png" alt="">
+        <div class="send-email">
+            <p class="send-email-text">Quer dicas de hábitos de higiene bucal e ganhar desconto na primeira compra?</p>
+            <div class="send-email-form">
+                <input class="primary-input" placeholder="Digite seu email aqui" type="text">
+                <button class="primary-button">Enviar</button>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js" type="module"></script>
 </body>
-<script src="index.js"></script>
 </html>

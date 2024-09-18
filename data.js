@@ -1,24 +1,24 @@
-const toothpaste = [
+export const toothpaste = [
     {
-        flavor: 'Hortelâ',
+        name: 'Hortelâ',
         image: './assets/toothpaste.png',
         price: 70.90,
         discount: 0
     },
     {
-        flavor: 'Morango',
+        name: 'Morango',
         image: './assets/toothpaste.png',
         price: 70.90,
         discount: 0.3
     },
     {
-        flavor: 'Uva',
+        name: 'Uva',
         image: './assets/toothpaste.png',
         price: 70.90,
         discount: 0.3
     },
     {
-        flavor: 'Café',
+        name: 'Café',
         image: './assets/toothpaste.png',
         price: 70.90,
         discount: 0.3
@@ -26,36 +26,36 @@ const toothpaste = [
     
 ];
 
-const toothbrush = [
+export const toothbrush = [
     {
-        color: 'Bamboo',
+        name: 'Bamboo',
         image: './assets/toothbrush.png',
         price: 70.90,
         discount: 0.3
     },
     {
-        color: 'Mógno',
+        name: 'Mógno',
         image: './assets/toothbrush.png',
         price: 70.90,
         discount: 0.3
     },
     {
-        color: 'Carvalho',
+        name: 'Carvalho',
         image: './assets/toothbrush.png',
         price: 70.90,
         discount: 0.3
     },
 ];
 
-const dentalFloss = [
+export const dentalFloss = [
     {
-        type: 'Fio dental',
+        name: 'Fio dental',
         image: './assets/dental-floss.png',
         price: 70.90,
         discount: 0.3
     },
     {
-        type: 'Fio dental',
+        name: 'Fio dental',
         image: './assets/dental-floss.png',
         price: 70.90,
         discount: 0.3
