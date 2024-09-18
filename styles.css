@@ -1,0 +1,258 @@
+:root {
+    --primary-color: #F7C325;
+    --secondary-color: #FDF3D3;
+    --tertiary-color: #1E000E;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", system-ui;
+}
+
+a {
+    color: #ffffff;
+}
+
+button, img {
+    cursor: pointer;
+}
+
+/* Estilo do aviso do canto superior */
+
+.first-buy-bonus {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    padding: 5px 0;
+    justify-content: center;
+    display: flex;
+    color: #ffffff;
+}
+
+/* Estilos do header */
+
+.header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.toggle-menu {
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sign-button {
+    border: none;
+    background: var(--tertiary-color);
+    color: #ffffff;
+    padding: 10px 17px;
+    border-radius: 7px;
+}
+
+/* Estilos do banner principal */
+
+.main-banner {
+    background-image: url('/assets/main-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.banner-title {
+    color: var(--secondary-color);
+    font-size: 48px;
+    max-width: 550px;
+}
+
+.banner-paragraph {
+    color: var(--secondary-color);
+    font-size: 24px;
+    max-width: 750px;
+    font-weight: 300;
+}
+
+/* filtros */
+
+.main-content {
+    padding: 3rem 5rem;
+}
+
+.content-title {
+    color: var(--primary-color);
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter-box {
+    display: flex;
+    align-items: center;
+}
+
+.filter {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+    height: max-content;
+    cursor: pointer;
+}
+
+.filter-button-box {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-button {
+    background: #ffffff;
+    height: max-content;
+    padding: 5px 15px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    font-weight: bold;
+}
+
+.filter-button.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.help-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 20px #00000040;
+}
+
+/* Produtos */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.product-list {
+    padding-top: 2.5rem;
+}
+
+hr {
+    border: none;
+    background-color: var(--tertiary-color);;
+    height: 2px;
+    width: 100%;
+    margin: 10px auto; 
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 380px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    position: relative
+}
+
+.img-item {
+    margin-top: 10px;
+}
+
+.product-item-title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+
+.rating {
+    width: 120px;
+    margin: 5px 0;
+}
+
+.discount {
+    color: #aaa;
+    font-size: 16px;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 70px;
+}
+
+.price {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.add-cart {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    padding: 12px 24px;
+    margin-inline: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.discount-percentage {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 400;
+}
